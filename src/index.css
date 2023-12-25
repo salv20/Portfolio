@@ -10,3 +10,21 @@ nav button {
 nav ul button:hover {
     border-bottom: 3px solid #b1b493;
 }
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.socials button {
+    border: 2px solid #e7e5e1;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.socials button:hover {
+    background-color: #e7e5e1;
+    color: #252734;
+    transition: all 0.3s ease-in-out;
+}

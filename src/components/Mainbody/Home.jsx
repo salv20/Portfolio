@@ -1,22 +1,22 @@
-import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaDownload, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope, FaTwitter } from 'react-icons/fa'
 
 const Home = () => {
     return (
-        <section className=' md:flex justify-around pb-4'>
-            <article className="">
-                <img src="/me.png" alt="" className=" w-64" />
-            </article>
-
-            <article className="grid gap-y-4 ">
-                <div className="">
-                    <h2> Hello everyone i am <span className=" uppercase font-semibold">salvation amoke, </span> a</h2>
-                    <h3 className=' capitalize font-semibold'> fronted web developer</h3>
+        <section className=' md:flex w-5/6 mx-auto justify-between'>
+            <article className='space-y-4 capitalize'>
+                <div className="text-lg md:text-xl  font-bold tracking-widest">
+                    <h2>hello! i&apos;m </h2>
+                    <h1 className='text-xl md:text-3xl'>salvation amoke</h1>
                 </div>
-                <p> <FaPhoneAlt className=' inline-block' /> (+234)9030866613</p>
-                <p> <FaRegEnvelope className=' inline-block' /> salvationamoke@gmail.com</p>
-                <p> <FaMapMarkerAlt className=' inline-block' /> Port harcout, rivers state</p>
-                <div className=' flex space-x-6'>
+                <p>fronted developer specializing in javascript & react js.</p>
 
+
+                <p> <FaPhoneAlt className=' inline-block mr-2' /> (+234)9030866613</p>
+                <p className=' lowercase'> <FaRegEnvelope className=' inline-block mr-2' /> salvationamoke@gmail.com</p>
+                <p> <FaMapMarkerAlt className=' inline-block mr-2' /> Port harcout, rivers state</p>
+
+
+                <div className='flex space-x-6 pb-4 socials'>
                     <button>
                         <a href="https://twitter.com/Salvati75317889"><FaTwitter /></a>
                     </button>
@@ -29,6 +29,14 @@ const Home = () => {
                         <a href="https://github.com/salv20"><FaGithub /></a>
                     </button>
                 </div>
+                <button
+                    className='mt-4 font-semibold capitalize border-2 py-3 px-6 rounded-3xl hover:bg-navText  hover:text-headerDarkBg transition-all duration-700'>
+                    get resume <FaDownload className=' inline-block' />
+                </button>
+            </article>
+
+            <article className='md:w-1/2 lg:w-1/3 '>
+                <img src="/me1.png" alt="" />
             </article>
         </section>
     )
