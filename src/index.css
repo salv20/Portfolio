@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav button {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul button:hover {
+    border-bottom: 3px solid #b1b493;
+}
