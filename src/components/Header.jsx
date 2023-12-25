@@ -4,11 +4,11 @@ const Header = () => {
 
     return (
         <header className="bg-headerLightBg md:bg-headerDarkBg ">
-            <nav className="space-y-6 text-white md:text-navText text-sm md:text-base w-5/6 mx-auto py-6 md:space-y-0 md:flex justify-between">
+            <nav className="space-y-6 text-white md:text-navText w-5/6 mx-auto py-6 md:space-y-0 md:flex justify-between">
                 <div className="flex md:block justify-between text-gray-400">
                     <h1 className="text-lg md:text-xl uppercase font-bold text-white ">salvation.</h1>
                     <button
-                        className="md:hidden text-base"
+                        className="md:hidden"
                         onClick={() => setopenNav(!openNav)}>
                         menu</button>
                 </div>
