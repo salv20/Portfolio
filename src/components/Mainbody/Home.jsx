@@ -2,7 +2,7 @@ import { FaGithub, FaDownload, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnve
 
 const Home = () => {
     return (
-        <section className=' md:flex w-5/6 mx-auto justify-between'>
+        <section className='flex-col-reverse md:flex-row flex w-5/6 mx-auto justify-between text-center md:text-left pb-4 md:pb-0 gap-y-8 md:gap-y-0'>
             <article className='space-y-4 capitalize'>
                 <div className="text-lg md:text-xl  font-bold tracking-widest">
                     <h2>hello! i&apos;m </h2>
@@ -16,7 +16,7 @@ const Home = () => {
                 <p> <FaMapMarkerAlt className=' inline-block mr-2' /> Port harcout, rivers state</p>
 
 
-                <div className='flex space-x-6 pb-4 socials'>
+                <div className='flex space-x-6 pb-4 socials justify-center md:justify-start'>
                     <button>
                         <a href="https://twitter.com/Salvati75317889"><FaTwitter /></a>
                     </button>
@@ -35,7 +35,7 @@ const Home = () => {
                 </button>
             </article>
 
-            <article className='md:w-1/2 lg:w-1/3 '>
+            <article className='md:w-1/2 lg:w-1/3 mx-auto md:mx-0 relative'>
                 <img src="/me1.png" alt="" />
             </article>
         </section>
