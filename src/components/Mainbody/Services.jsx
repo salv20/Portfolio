@@ -6,9 +6,9 @@ import { FaComputer, } from 'react-icons/fa6'
 const Services = () => {
     return (
         <section className=" bg-headerLightBg py-12 text-navText">
-            <div className="w-4/5 mx-auto space-y-10 capitalize">
+            <div className="w-4/5 mx-auto space-y-8 capitalize">
                 <h2 className=' md:text-lg font-semibold tracking-widest'>|| my services</h2>
-                <h1 className=' text-xl md:text-3xl tracking-wider'>services i offer to my clients: </h1>
+                <h1 className=' text-lg sm:text-xl md:text-3xl tracking-wider'>services i offer to my clients: </h1>
                 <Swiper
                     slidesPerView={2}
                     spaceBetween={30}
