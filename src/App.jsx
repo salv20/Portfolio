@@ -10,7 +10,6 @@ function App() {
         <Header />
         <Home />
       </div>
-      <p>gegg</p>
     </main>
   )
 }
