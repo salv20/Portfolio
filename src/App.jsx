@@ -1,15 +1,17 @@
 import Header from "./components/Header"
-import Home from "./components/Mainbody/Home"
+import About from "./components/Mainbody/About"
+import Services from "./components/Mainbody/Services"
 
 
 function App() {
 
   return (
-    <main className=" space-y-4">
+    <main>
       <div className=" bg-headerDarkBg text-navText space-y-6">
         <Header />
-        <Home />
+        <About />
       </div>
+      <Services />
     </main>
   )
 }

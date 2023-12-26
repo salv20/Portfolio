@@ -26,3 +26,20 @@ body {
     color: #252734;
     transition: all 0.3s ease-in-out;
 }
+
+
+
+.swiper-slide {
+    /* text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.swiped {
+    /* border: 10px solid white; */
+    box-shadow: 2px 2px 5px #252734;
+}
