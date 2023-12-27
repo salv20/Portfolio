@@ -7,10 +7,10 @@ const About = () => {
                     <h1 className=" uppercase text-gray-300">about me</h1>
                     <p>
                         I have been working in the tech industry for over a year,
-                        and in that time I have gained a wealth of experience and knowledge
+                        and within that time I have gained a wealth of experience and knowledge
                         in Javascript and various frameworks.
                         I am always eager to learn more and stay up-to-date on the latest technologies
-                        i have an excellent communication skills and a good team player.
+                        i have an excellent communication skill and i&apos;m a good team player.
                     </p>
                 </article>
 
