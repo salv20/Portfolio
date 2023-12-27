@@ -12,7 +12,8 @@ body {
 }
 
 .home,
-.service {
+.service,
+.skill {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -128,6 +129,16 @@ body {
 
 header ul li {
     border-bottom: solid white 1px;
+}
+
+.skill article {
+    background-color: #252734;
+    padding: 70px 0px;
+    transition: all 1s ease;
+}
+
+.skill article:hover {
+    box-shadow: -4px -4px 2px #e7e5e1;
 }
 
 @media screen and (min-width:768px) {
