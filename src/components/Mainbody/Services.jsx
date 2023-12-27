@@ -1,7 +1,8 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules'
+import { Pagination, EffectCreative } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 const images = ['/web-dev.png', '/teach.png', '/backend-dev.png']
 const role = ['frontend developmet', 'coaching and mentorship', 'baas']
 const tools = [
@@ -22,8 +23,19 @@ const Services = () => {
                     pagination={{
                         clickable: true,
                     }}
-                    modules={[Pagination]}
-                    className="mySwiper md:hidden"
+                    effect={'creative'}
+                    creativeEffect={{
+                        prev: {
+                            shadow: true,
+                            translate: [0, 0, -500],
+                        },
+                        next: {
+                            shadow: true,
+                            translate: ['100%', 0, 0],
+                        },
+                    }}
+                    modules={[Pagination, EffectCreative]}
+                    className="md:hidden"
                 >
                     {
                         images.map((imgs, index) => (
@@ -46,7 +58,9 @@ const Services = () => {
                         ))
                     }
                 </Swiper>
+
                 {/* TWO SLIDES PER VIEW */}
+
                 <Swiper
                     slidesPerView={2}
                     spaceBetween={60}
@@ -54,7 +68,7 @@ const Services = () => {
                         clickable: true,
                     }}
                     modules={[Pagination]}
-                    className="mySwiper hidden md:block lg:hidden"
+                    className="hidden md:block lg:hidden"
                 >
                     {
                         images.map((imgs, index) => (
@@ -79,6 +93,7 @@ const Services = () => {
                 </Swiper>
 
                 {/* THREE SLIDES PER VIEW */}
+
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={60}
@@ -86,7 +101,7 @@ const Services = () => {
                         clickable: true,
                     }}
                     modules={[Pagination]}
-                    className="mySwiper hidden lg:block"
+                    className="hidden lg:block"
                 >
                     {
                         images.map((imgs, index) => (
