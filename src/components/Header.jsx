@@ -3,7 +3,7 @@ const Header = () => {
     const [openNav, setopenNav] = useState(false)
 
     return (
-        <header className="bg-headerLightBg md:bg-headerDarkBg ">
+        <header className="bg-headerLightBg md:bg-headerDarkBg relative">
             <nav
                 className="space-y-6 text-white md:text-gray-400 w-5/6 mx-auto py-6 md:space-y-0 md:flex justify-between"
             >

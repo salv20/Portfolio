@@ -124,3 +124,7 @@ body {
     position: relative;
     margin-top: 200px;
 }
+
+header ul li {
+    border-bottom: solid #b1b493 2px;
+}
