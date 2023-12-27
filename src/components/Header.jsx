@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="bg-headerLightBg md:bg-headerDarkBg ">
             <nav
-                className="space-y-6 text-white md:text-gray-400 w-4/5 mx-auto py-6 md:space-y-0 md:flex justify-between"
+                className="space-y-6 text-white md:text-gray-400 w-5/6 mx-auto py-6 md:space-y-0 md:flex justify-between"
             >
                 <div className="flex md:block justify-between">
                     <h1 className="text-lg md:text-xl uppercase font-bold text-white ">salvation.</h1>
