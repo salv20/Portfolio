@@ -8,6 +8,11 @@ nav button {
 }
 
 body {
+    font-family: sans-serif;
+}
+
+.home,
+.service {
     font-family: 'Roboto', sans-serif;
 }
 

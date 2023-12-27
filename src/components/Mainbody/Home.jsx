@@ -2,7 +2,7 @@ import { FaGithub, FaDownload, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnve
 
 const Home = () => {
     return (
-        <section className='flex-col-reverse md:flex-row flex w-5/6 mx-auto justify-between text-center md:text-left pb-4 gap-y-8 md:gap-y-0'>
+        <section className='home flex-col-reverse md:flex-row flex w-5/6 mx-auto justify-between text-center md:text-left pb-4 gap-y-8 md:gap-y-0'>
             <article className='space-y-4 capitalize'>
                 <div className="text-lg md:text-xl  font-bold tracking-widest">
                     <h2>hello! i&apos;m </h2>
