@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        100: "80rem",
+      },
+      screens: {
+        sl: "450px",
+      },
       colors: {
         headerDarkBg: "#252734",
         headerLightBg: "#2a2c39",

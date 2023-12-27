@@ -15,7 +15,7 @@ const Header = () => {
                         menu</button>
                 </div>
 
-                <ul className={`${!openNav ? 'hidden' : 'block'} text-sm md:text-base space-y-4 md:space-y-0 md:flex md:space-x-6`}>
+                <ul className={`${openNav ? ' left-0' : ' -left-100'} md:left-0 absolute bg-headerLightBg w-full px-9 sm:px-16 sl:px-12 md:px-0 space-y-2 transition-all duration-1000 ease-in-out md:flex md:relative md:space-y-0 md:space-x-6 md:w-fit md:bg-transparent`}>
                     <li>
                         <button>home</button>
                     </li>

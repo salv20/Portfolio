@@ -7,10 +7,6 @@ nav button {
     text-transform: uppercase;
 }
 
-nav ul button:hover {
-    border-bottom: 3px solid #b1b493;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -127,4 +123,14 @@ body {
 
 header ul li {
     border-bottom: solid #b1b493 2px;
+}
+
+@media screen and (min-width:768px) {
+    header ul li {
+        border-bottom: none;
+    }
+
+    nav ul button:hover {
+        border-bottom: 3px solid #b1b493;
+    }
 }
