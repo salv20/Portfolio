@@ -15,15 +15,15 @@ export const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        const nameregex = /^[a-zA-Z]([-']?[a-zA-Z]+)+\s*( [a-zA-Z]([-']?[a-zA-Z]+)+\s*)+$/
+        const nameregex1 = /^[a-zA-Z\-]+$/
+        const nameregex = /^[a-zA-Z\-]+\s/
         const emailregex = /\S+@\S+\.\S+/
 
-
-        !(emailData.fullName.match(nameregex)) && document.querySelector('.errorname').classList.remove('hidden')
+        !(emailData.fullName.match(nameregex) || emailData.fullName.match(nameregex1)) && document.querySelector('.errorname').classList.remove('hidden')
         !(emailData.email.match(emailregex)) && document.querySelector('.erroremail').classList.remove('hidden')
         !(emailData.message) && document.querySelector('.errormessage').classList.remove('hidden')
 
-        emailData.fullName.match(nameregex) &&
+        emailData.fullName.match(nameregex) || emailData.fullName.match(nameregex1) &&
             (emailData.email.match(emailregex)) &&
             (emailData.message) &&
             emailjs.sendForm('service_3ee8fgw', 'template_mfde9xd', form.current, 'lhb8k-wo5ui7qmfhC')
