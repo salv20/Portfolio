@@ -13,7 +13,8 @@ body {
 
 .home,
 .service,
-.skill {
+.skill,
+.service {
     font-family: 'Roboto', sans-serif;
 }
 
