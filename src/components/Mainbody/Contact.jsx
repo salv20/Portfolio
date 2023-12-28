@@ -43,7 +43,7 @@ export const Contact = () => {
     return (
         <section className=' bg-headerDarkBg text-white py-4'>
             <article className="w-5/6 mx-auto text-center space-y-4 bg-headerLightBg px-4 md:px-10 pt-4 pb-1">
-                <h2 className='font-semibold text-lg tracking-wider uppercase'>Contact me.</h2>
+                <h2 className='text-lg tracking-wider uppercase'>Contact me.</h2>
 
                 <form ref={form} className='space-y-4' onSubmit={sendEmail}>
                     <div>

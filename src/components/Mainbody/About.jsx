@@ -9,7 +9,7 @@ const About = () => {
                         I have been working in the tech industry for over a year,
                         and within that time I have gained a wealth of experience and knowledge
                         in Javascript and various frameworks.
-                        I am always eager to learn more and stay up-to-date on the latest technologies
+                        I am always eager to learn more and stay up-to-date with the latest technologies;
                         i have an excellent communication skill and i&apos;m a good team player.
                     </p>
                 </article>
@@ -27,7 +27,7 @@ const About = () => {
                 <article className="capitalize space-y-2">
                     <h1 className=" uppercase text-gray-300">education</h1>
                     <div className="">
-                        <p className=" uppercase">hight school diploma</p>
+                        <p className=" uppercase">high school diploma</p>
                         <p>baptist high school</p>
                     </div>
                     <div className="">
