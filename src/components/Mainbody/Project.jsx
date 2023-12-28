@@ -14,9 +14,9 @@ const Project = () => {
                             <a href={`${liveWeb[index]}`} >
                                 <img src={`${img}`} alt="" className=" rounded-t-xl" />
                             </a>
-                            <div className=" text-center uppercase">
+                            <div className=" text-center uppercase space-y-1 py-2">
                                 <p>{name[index]}</p>
-                                <a href={`${gitRepo[index]}`} className=" inline-block">
+                                <a href={`${gitRepo[index]}`} className=" inline-block text-xl">
                                     <FaGithub />
                                 </a>
                             </div>

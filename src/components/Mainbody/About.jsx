@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <section className=" bg-headerLightBg text-white py-6">
+        <section className="about bg-headerLightBg text-white py-6">
             <div className="w-5/6 mx-auto space-y-6 md:space-y-0 md:flex justify-between md:space-x-4">
                 <article className="space-y-2 md:w-3/4 lg:w-1/2">
                     <h1 className=" uppercase text-gray-300">about me</h1>

@@ -8,14 +8,12 @@ nav button {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.home,
-.service,
-.skill,
-.service {
-    font-family: 'Roboto', sans-serif;
+.about {
+    font-family: sans-serif;
+
 }
 
 .socials button {
@@ -130,13 +128,6 @@ body {
 
 header ul li {
     border-bottom: solid white 1px;
-}
-
-.skill p {
-    background-color: #252734;
-    padding: 70px 0px;
-    transition: all 1s ease;
-    cursor: pointer;
 }
 
 .skill p:hover {
