@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import About from "./components/Mainbody/About"
+import Contact from "./components/Mainbody/Contact"
 import Home from "./components/Mainbody/Home"
 import Project from "./components/Mainbody/Project"
 import Services from "./components/Mainbody/Services"
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Services />
       <Project />
+      <Contact />
     </main>
   )
 }
