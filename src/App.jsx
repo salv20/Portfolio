@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import About from "./components/Mainbody/About"
 import Contact from "./components/Mainbody/Contact"
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Project />
       <Contact />
+      <Footer />
     </main>
   )
 }

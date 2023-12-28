@@ -15,16 +15,6 @@ const About = () => {
                 </article>
 
                 <article className="capitalize space-y-2">
-                    <h1 className=" uppercase text-gray-300">experience</h1>
-                    <div className="">
-                        <p>company: climedia hub </p>
-                        <p>date: december 2023 - january 2024</p>
-                        <p>Job-type: contract</p>
-                        <p>Role: frontend developer</p>
-                    </div>
-                </article>
-
-                <article className="capitalize space-y-2">
                     <h1 className=" uppercase text-gray-300">education</h1>
                     <div className="">
                         <p className=" uppercase">high school diploma</p>
@@ -35,6 +25,17 @@ const About = () => {
                         <p>udemy</p>
                     </div>
                 </article>
+
+                <article className="capitalize space-y-2">
+                    <h1 className=" uppercase text-gray-300">experience</h1>
+                    <div className="">
+                        <p>company: climedia hub </p>
+                        <p>date: december 2023 - january 2024</p>
+                        <p>Job-type: contract</p>
+                        <p>Role: frontend developer</p>
+                    </div>
+                </article>
+
             </div>
         </section>
     )

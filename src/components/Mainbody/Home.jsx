@@ -8,7 +8,7 @@ const Home = () => {
                     <h2>hello! i&apos;m </h2>
                     <h1>salvation amoke</h1>
                 </div>
-                <p>fronted developer specializing in javascript & react js.</p>
+                <p>frontend developer specializing in javascript & react js.</p>
 
                 <div className=" space-y-4 grid text-left justify-center md:justify-start">
                     <p> <FaPhoneAlt className=' inline-block mr-2' /> (+234)9030866613</p>
