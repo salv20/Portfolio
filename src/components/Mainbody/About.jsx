@@ -10,7 +10,6 @@ const About = () => {
             x: '0%',
             transition: {
                 duration: 1,
-                delay: 0,
             }
         }
     }
@@ -24,7 +23,7 @@ const About = () => {
             y: '0%',
             transition: {
                 duration: 1,
-                delay: 0,
+                delay: 0.5,
             }
         }
     }
@@ -38,7 +37,7 @@ const About = () => {
             x: '0%',
             transition: {
                 duration: 1,
-                delay: 0,
+                delay: 0.5,
             }
         }
     }
@@ -49,7 +48,7 @@ const About = () => {
             <div className="w-5/6 mx-auto space-y-6 md:space-y-0 md:flex justify-between md:space-x-4">
                 <motion.article
                     variants={item1}
-                    viewport={{ once: true, amount: 0.4 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     initial="initial"
                     whileInView="animate"
                     className="space-y-2 md:w-3/4 lg:w-1/2">

@@ -82,7 +82,6 @@ const Home = () => {
                         transition: {
                             delay: 1.5,
                             duration: 1,
-
                         }
                     }} >
                     frontend developer specializing in javascript & react js.</motion.p>
