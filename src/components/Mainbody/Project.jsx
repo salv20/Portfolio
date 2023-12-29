@@ -10,11 +10,11 @@ const name = ['glints', 'store', 'travel-app']
 const Project = () => {
     return (
         <section className=' bg-headerDarkBg py-8'>
-            <div className=" w-5/6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center gap-4">
+            <motion.div className=" w-5/6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center gap-4">
                 {
                     images.map((img, index) => (
 
-                        <div className=" bg-navText rounded-xl" key={index}>
+                        <motion.div className=" bg-navText rounded-xl" key={index}>
                             <a href={`${liveWeb[index]}`} >
                                 <img src={`${img}`} alt="" className=" rounded-t-lg" />
                             </a>
@@ -24,11 +24,11 @@ const Project = () => {
                                     <FaGithub />
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     ))
                 }
 
-            </div>
+            </motion.div>
         </section>
     )
 }

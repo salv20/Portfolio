@@ -31,7 +31,7 @@ const About = () => {
     const item3 = {
         initial: {
             opacity: 0,
-            x: '20%'
+            x: '10%'
         },
         animate: {
             opacity: 1,
@@ -49,7 +49,7 @@ const About = () => {
             <div className="w-5/6 mx-auto space-y-6 md:space-y-0 md:flex justify-between md:space-x-4">
                 <motion.article
                     variants={item1}
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     initial="initial"
                     whileInView="animate"
                     className="space-y-2 md:w-3/4 lg:w-1/2">
