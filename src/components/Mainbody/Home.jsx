@@ -1,6 +1,5 @@
 import { FaGithub, FaDownload, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope, FaTwitter } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-
 const Home = () => {
     const container = {
         initial: {
@@ -113,8 +112,9 @@ const Home = () => {
                     </motion.button>
                 </motion.div>
                 <button
+
                     className='mt-4 font-semibold capitalize border-2 py-3 px-6 rounded-3xl hover:bg-navText  hover:text-headerDarkBg transition-all duration-700'>
-                    get resume <FaDownload className=' inline-block' />
+                    <a href="/resume.docx" download > get resume <FaDownload className=' inline-block' /></a>
                 </button>
             </motion.article>
 
