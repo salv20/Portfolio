@@ -16,7 +16,6 @@ const container = {
         opacity: 1,
         x: '0%',
         transition: {
-            delay: 0.5,
             duration: 2,
             type: 'Tween',
             staggerChildren: 1
@@ -37,7 +36,7 @@ const Project = () => {
             <motion.div
                 className=" w-5/6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center gap-4"
                 variants={container}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
                 initial="initial"
                 whileInView="animate"
             >

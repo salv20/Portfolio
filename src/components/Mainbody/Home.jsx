@@ -127,7 +127,7 @@ const Home = () => {
                     transition: {
                         duration: 2,
                         type: 'just',
-                        delay: 1
+                        delay: 0.5
                     }
                 }}
                 whileInView='animate'
