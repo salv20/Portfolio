@@ -2,11 +2,10 @@ import { ScrollInto } from "react-scroll-into-view"
 const Header = ({ openNav, setopenNav }) => {
     const navOptions = ['home', 'about', 'skills', 'services', 'projects', 'contact']
     const sectionClass = ['home', 'about', 'skills', 'services', 'projects', 'contact']
-    // skills
     return (
         <header className="bg-headerLightBg md:bg-headerDarkBg relative">
             <nav
-                className="space-y-6 text-white md:text-gray-400 w-5/6 mx-auto py-6 md:space-y-0 md:flex justify-between"
+                className={`space-y-6 text-white md:text-gray-400 w-5/6 mx-auto py-6 md:space-y-0 md:flex justify-between`}
             >
                 <div className="flex md:block justify-between">
                     <h1 className="text-lg md:text-xl uppercase font-bold text-white ">salvation.</h1>
@@ -20,36 +19,16 @@ const Header = ({ openNav, setopenNav }) => {
                     {
                         navOptions.map((nav, index) => (
                             <li key={index}>
-                                <ScrollInto selector={`.${sectionClass[index]}`}>
+                                <ScrollInto selector={`.${sectionClass[index]}`} smooth={true}>
                                     <button onClick={() => setopenNav(!openNav)}>{nav} </button>
                                 </ScrollInto>
                             </li>
                         ))
                     }
-
-                    {/* <li>
-                        <button onClick={() => setopenNav(!openNav)}>home</button>
-                    </li>
-                    <li>
-                        <button onClick={() => setopenNav(!openNav)}>about</button>
-                    </li>
-                    <li>
-                        <button onClick={() => setopenNav(!openNav)}>skills</button>
-                    </li>
-                    <li>
-                        <button onClick={() => setopenNav(!openNav)}>services</button>
-                    </li>
-                    <li>
-                        <button onClick={() => setopenNav(!openNav)}>projects</button>
-                    </li>
-                    <li>
-                        <ScrollInto selector=".contact">
-                            <button onClick={() => setopenNav(!openNav)}>contact</button>
-                        </ScrollInto>
-                    </li> */}
                 </ul>
             </nav>
         </header>
+
     )
 }
 
