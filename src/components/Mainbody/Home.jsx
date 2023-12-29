@@ -5,7 +5,6 @@ const Home = () => {
         initial: {
             opacity: 0,
             x: '-20%'
-
         },
         animate: {
             opacity: 1,
@@ -16,12 +15,11 @@ const Home = () => {
             }
         }
     }
-    // 
+
     const container1 = {
         initial: {
             opacity: 0,
             y: '-40%'
-
         },
         animate: {
             opacity: 1,
@@ -86,8 +84,8 @@ const Home = () => {
                             duration: 1,
 
                         }
-                    }}
-                >frontend developer specializing in javascript & react js.</motion.p>
+                    }} >
+                    frontend developer specializing in javascript & react js.</motion.p>
 
                 <div className=" space-y-4 grid text-left justify-center md:justify-start">
                     <p> <FaPhoneAlt className=' inline-block mr-2' /> (+234)9030866613</p>
@@ -112,7 +110,6 @@ const Home = () => {
                     </motion.button>
                 </motion.div>
                 <button
-
                     className='mt-4 font-semibold capitalize border-2 py-3 px-6 rounded-3xl hover:bg-navText  hover:text-headerDarkBg transition-all duration-700'>
                     <a href="/resume.docx" download > get resume <FaDownload className=' inline-block' /></a>
                 </button>
@@ -124,7 +121,6 @@ const Home = () => {
                         opacity: 0,
                         x: '10%'
                     }
-
                 }
                 animate={{
                     opacity: 1,
@@ -132,7 +128,7 @@ const Home = () => {
                     transition: {
                         duration: 2,
                         type: 'just',
-                        delay: 1.5
+                        delay: 1
                     }
                 }}
                 viewport={{ amount: 0.3, once: true }}
