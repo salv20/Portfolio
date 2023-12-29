@@ -42,7 +42,7 @@ const Home = ({ setopenNav }) => {
     }
 
     return (
-        <section className='flex-col-reverse md:flex-row flex w-5/6 mx-auto justify-between text-center md:text-left pb-4 gap-y-8 md:gap-y-0'
+        <section className='home flex-col-reverse md:flex-row flex w-5/6 mx-auto justify-between text-center md:text-left pb-4 gap-y-8 md:gap-y-0'
             onClick={() => setopenNav(false)}
         >
             <motion.article className='space-y-4 capitalize'
@@ -86,7 +86,7 @@ const Home = ({ setopenNav }) => {
                     }} >
                     frontend developer specializing in javascript & react js.</motion.p>
 
-                <div className=" space-y-4 grid text-left justify-center md:justify-start">
+                <div className="space-y-4 grid text-left justify-center md:justify-start">
                     <p> <FaPhoneAlt className=' inline-block mr-2' /> (+234)9030866613</p>
                     <p className=' lowercase'> <FaRegEnvelope className=' inline-block mr-2' /> salvationamoke@gmail.com</p>
                     <p> <FaMapMarkerAlt className=' inline-block mr-2' /> Port harcout, rivers state</p>

@@ -41,7 +41,7 @@ export const Contact = () => {
     };
 
     return (
-        <section className=' bg-headerDarkBg text-white py-4'>
+        <section className='contact bg-headerDarkBg text-white py-4'>
             <article className="w-5/6 mx-auto text-center space-y-4 bg-headerLightBg px-4 md:px-10 pt-4 pb-1">
                 <h2 className='text-lg tracking-wider uppercase'>Contact me.</h2>
 

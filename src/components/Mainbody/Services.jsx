@@ -12,7 +12,7 @@ const tools = [
 ]
 const Services = () => {
     return (
-        <section className="bg-headerLightBg py-10 text-navText">
+        <section className="services bg-headerLightBg py-10 text-navText">
             <div className="w-5/6 mx-auto space-y-6 capitalize">
                 <h2 className=' md:text-lg font-semibold tracking-widest'>|| my services</h2>
                 <h1 className=' text-lg sm:text-xl md:text-3xl tracking-wider'>services i offer to my clients: </h1>
