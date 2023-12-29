@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import About from "./components/Mainbody/About"
@@ -9,12 +10,13 @@ import Skills from "./components/Mainbody/Skills"
 
 
 function App() {
+  const [openNav, setopenNav] = useState(false)
 
   return (
     <main>
       <div className=" bg-headerDarkBg text-navText space-y-6">
-        <Header />
-        <Home />
+        <Header openNav={openNav} setopenNav={setopenNav} />
+        <Home setopenNav={setopenNav} />
       </div>
       <About />
       <Skills />
