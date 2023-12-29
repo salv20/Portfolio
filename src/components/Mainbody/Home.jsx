@@ -122,7 +122,7 @@ const Home = () => {
                 initial={
                     {
                         opacity: 0,
-                        x: '40%'
+                        x: '10%'
                     }
 
                 }
