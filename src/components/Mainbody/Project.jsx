@@ -1,8 +1,12 @@
+
+import { FaGithub } from "react-icons/fa"
+import { motion } from "framer-motion"
+
 const images = ['/Glints.png', '/store.png', '/travel.png']
 const liveWeb = ['https://glints-project.vercel.app/', 'https://seanstore-i01.vercel.app/', 'https://the-traveller-beta.vercel.app/']
 const gitRepo = ['https://github.com/salv20/Glints', 'https://github.com/salv20/seanstore', 'https://github.com/salv20/TheTraveller']
 const name = ['glints', 'store', 'travel-app']
-import { FaGithub } from "react-icons/fa"
+
 const Project = () => {
     return (
         <section className=' bg-headerDarkBg py-8'>

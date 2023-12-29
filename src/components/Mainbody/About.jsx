@@ -1,41 +1,57 @@
-import { animate, motion } from "framer-motion"
+import { motion } from "framer-motion"
 const About = () => {
-    const container = {
-
+    const item1 = {
+        initial: {
+            opacity: 0,
+            x: '-40%'
+        },
         animate: {
             opacity: 1,
+            x: '0%',
             transition: {
-                staggerChildren: 1,
-                duration: 2,
-                delay: 1
+                duration: 1,
+                delay: 0,
             }
         }
     }
-    const item = {
+    const item2 = {
         initial: {
             opacity: 0,
-            y: '-10%'
+            y: '-40%'
         },
         animate: {
             opacity: 1,
             y: '0%',
-            duration: 0.5,
-            delay: 1,
-            type: 'tween',
+            transition: {
+                duration: 1,
+                delay: 0,
+            }
+        }
+    }
+    const item3 = {
+        initial: {
+            opacity: 0,
+            x: '20%'
+        },
+        animate: {
+            opacity: 1,
+            x: '0%',
+            transition: {
+                duration: 1,
+                delay: 0,
+            }
         }
     }
     return (
-        <motion.section
+        <section
             className="about bg-headerLightBg text-white py-6"
-            variants={container}
-            whileInView={animate}
-            initial='initial'
-            animate='animate'
-            viewport={{ amount: 0.3, once: true }}
         >
             <div className="w-5/6 mx-auto space-y-6 md:space-y-0 md:flex justify-between md:space-x-4">
                 <motion.article
-                    variants={item}
+                    variants={item1}
+                    viewport={{ once: true, amount: 0.3 }}
+                    initial="initial"
+                    whileInView="animate"
                     className="space-y-2 md:w-3/4 lg:w-1/2">
                     <h1 className=" uppercase text-gray-300">about me</h1>
                     <p>
@@ -48,7 +64,10 @@ const About = () => {
                 </motion.article>
 
                 <motion.article
-                    variants={item}
+                    variants={item2}
+                    viewport={{ once: true, amount: 0.3 }}
+                    initial="initial"
+                    whileInView="animate"
                     className="capitalize space-y-2">
                     <h1 className=" uppercase text-gray-300">education</h1>
                     <div className="">
@@ -62,7 +81,10 @@ const About = () => {
                 </motion.article>
 
                 <motion.article
-                    variants={item}
+                    variants={item3}
+                    viewport={{ once: true, amount: 0.3 }}
+                    initial="initial"
+                    whileInView="animate"
                     className="capitalize space-y-2">
                     <h1 className=" uppercase text-gray-300">experience</h1>
                     <div className="">
@@ -72,9 +94,8 @@ const About = () => {
                         <p>Role: frontend developer</p>
                     </div>
                 </motion.article>
-
             </div>
-        </motion.section>
+        </section>
     )
 }
 

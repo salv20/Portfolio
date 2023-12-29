@@ -1,5 +1,5 @@
 import { FaGithub, FaDownload, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope, FaTwitter } from 'react-icons/fa'
-import { animate, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 const Home = () => {
     const container = {
         initial: {
@@ -131,7 +131,7 @@ const Home = () => {
                         delay: 1
                     }
                 }}
-                whileInView={animate}
+                whileInView='animate'
                 viewport={{ amount: 0.3, once: true }}
             >
                 <img src="/me2.png" alt="" />
