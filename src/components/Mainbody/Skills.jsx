@@ -1,6 +1,6 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, EffectCreative } from 'swiper/modules'
+import { Pagination, EffectCreative, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react';
 const skillList = ['html/css', 'tailwind css', 'javascript', 'react js', 'supabase', 'communication']
 const Skills = () => {
@@ -16,6 +16,10 @@ const Skills = () => {
                     pagination={{
                         clickable: true,
                     }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
                     effect={'creative'}
                     creativeEffect={{
                         prev: {
@@ -27,7 +31,7 @@ const Skills = () => {
                             translate: ['100%', 0, 0],
                         },
                     }}
-                    modules={[Pagination, EffectCreative]}
+                    modules={[Pagination, EffectCreative, Autoplay]}
                     className="sm:hidden uppercase bg-headerDarkBg"
                 >
                     {
@@ -51,8 +55,12 @@ const Skills = () => {
                     pagination={{
                         clickable: true,
                     }}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    }}
                     effect={'fade'}
-                    modules={[Pagination]}
+                    modules={[Pagination, Autoplay]}
                     className="hidden sm:block uppercase bg-headerDarkBg"
                 >
                     {

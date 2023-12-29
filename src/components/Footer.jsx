@@ -7,7 +7,7 @@ const Footer = () => {
                     Frontend Developer Specializing In Javascript & React Js,
                     eager to learn more and stay up-to-date with the latest technologies.
                 </p>
-                <div className='flex space-x-6 socials sm:justify-center '>
+                <div className='flex space-x-6 socials1 sm:justify-center '>
                     <button>
                         <a href="https://twitter.com/Salvati75317889"><FaTwitter /></a>
                     </button>

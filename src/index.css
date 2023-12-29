@@ -22,7 +22,20 @@ body {
     border-radius: 100%;
 }
 
+.socials1 button {
+    border: 2px solid #e7e5e1;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
 .socials button:hover {
+    background-color: #e7e5e1;
+    color: #252734;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials1 button:hover {
     background-color: #e7e5e1;
     color: #252734;
     transition: all 0.3s ease-in-out;
@@ -134,12 +147,9 @@ header ul li {
     box-shadow: -4px -4px 2px #e7e5e1;
 }
 
+
 @media screen and (min-width:768px) {
     header ul li {
         border-bottom: none;
-    }
-
-    nav ul button:hover {
-        border-bottom: 3px solid #b1b493;
     }
 }
