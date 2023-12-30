@@ -154,6 +154,7 @@ header {
 .nav-active {
     position: fixed;
     transition: 0.3s ease-in;
+    background-color: rgb(11, 3, 3);
     top: 0;
     left: 0;
     right: 0;
