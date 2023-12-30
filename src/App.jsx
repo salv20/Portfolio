@@ -18,12 +18,14 @@ function App() {
         <Header openNav={openNav} setopenNav={setopenNav} />
         <Home setopenNav={setopenNav} />
       </div>
-      <About />
-      <Skills />
-      <Services />
-      <Project />
-      <Contact />
-      <Footer />
+      <div onClick={() => setopenNav(false)}>
+        <About />
+        <Skills />
+        <Services />
+        <Project />
+        <Contact />
+        <Footer />
+      </div>
     </main>
   )
 }
