@@ -16,7 +16,7 @@ const Header = ({ openNav, setopenNav }) => {
                         menu</button>
                 </div>
 
-                <ul className={`${openNav ? ' left-0' : ' -left-100'} md:left-0 absolute bg-headerLightBg w-full px-9 sm:px-16 sl:px-12 md:px-0 space-y-2 transition-all duration-1000 ease-in-out md:flex md:relative md:space-y-0 md:space-x-6 md:w-fit md:bg-transparent pb-6 md:pb-0`}>
+                <ul className={`${openNav ? ' left-0' : ' -left-100'} md:left-0 absolute bg-headerLightBg w-full px-9 sm:px-16 sl:px-12 md:px-0 space-y-4 transition-all duration-1000 ease-in-out md:flex md:relative md:space-y-0 md:space-x-6 md:w-fit md:bg-transparent pb-6 md:pb-0`}>
                     {
                         navOptions.map((nav, index) => (
                             <li key={index}>
