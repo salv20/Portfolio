@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const skillList = ['html/css', 'tailwind css', 'javascript', 'react js', 'supabase', 'communication']
 const Skills = () => {
     return (
-        <section className="skills bg-headerDarkBg text-white pt-4 pb-8 space-y-2">
+        <section className="skills bg-headerDarkBg text-white pt-4 pb-8 space-y-4">
             <h1 className=" uppercase text-center text-lg">my skills</h1>
             <div className="w-5/6 mx-auto bg-headerLightBg ">
 

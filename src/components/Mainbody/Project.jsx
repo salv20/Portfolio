@@ -32,7 +32,9 @@ const item = {
 }
 const Project = () => {
     return (
-        <section className='projects bg-headerDarkBg py-8'>
+        <section className='projects bg-headerDarkBg py-8 space-y-4'>
+            <h1 className=" uppercase text-center text-lg text-white">my projects</h1>
+
             <motion.div
                 className=" w-5/6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center gap-4"
                 variants={container}

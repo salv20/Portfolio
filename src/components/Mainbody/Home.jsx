@@ -133,7 +133,7 @@ const Home = ({ setopenNav }) => {
                 whileInView='animate'
                 viewport={{ amount: 0.3, once: true }}
             >
-                <img src="/me2.png" alt="" />
+                <img src="/SALVA.png" alt="" />
             </motion.article>
         </section>
     )

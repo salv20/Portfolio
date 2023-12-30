@@ -159,6 +159,10 @@ header {
     right: 0;
 }
 
+.image img {
+    width: 310px;
+}
+
 @media screen and (min-width:768px) {
     header ul li {
         border-bottom: none;

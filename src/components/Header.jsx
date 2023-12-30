@@ -1,38 +1,8 @@
-import { useEffect } from "react"
 import { ScrollInto } from "react-scroll-into-view"
+
 const Header = ({ openNav, setopenNav }) => {
     const navOptions = ['home', 'about', 'skills', 'services', 'projects', 'contact']
     const sectionClass = ['home', 'about', 'skills', 'services', 'projects', 'contact']
-
-    useEffect(() => {
-        const navbar = document.querySelector('header')
-        const imgArt = document.querySelector('.image')
-        // window.onscroll = () => {
-
-        //     if (window.pageYOffset > navbar.clientHeight) {
-        //         navbar.classList.add("nav-active");
-        //     } else {
-        //         navbar.classList.remove("nav-active");
-        //     }
-        // }
-
-        const observer = new IntersectionObserver(
-            ([e]) => {
-                if (e.isIntersecting) {
-                    navbar.classList.remove("nav-active");
-                } else {
-                    navbar.classList.add("nav-active");
-                }
-            },
-            {
-                threshold: [0],
-                root: document,
-                rootMargin: `${-navbar.clientHeight}px`
-            }
-        )
-        observer.observe(imgArt)
-    })
-
     return (
         <header className="bg-headerLightBg md:bg-headerDarkBg relative">
             <nav
@@ -50,9 +20,11 @@ const Header = ({ openNav, setopenNav }) => {
                     {
                         navOptions.map((nav, index) => (
                             <li key={index}>
-                                <ScrollInto selector={`.${sectionClass[index]}`} smooth={true}>
-                                    <button onClick={() => setopenNav(!openNav)}>{nav} </button>
-                                </ScrollInto>
+                                <button onClick={() => setopenNav(!openNav)}>
+                                    <ScrollInto selector={`.${sectionClass[index]}`} smooth={true}>
+                                        {nav}
+                                    </ScrollInto>
+                                </button>
                             </li>
                         ))
                     }
