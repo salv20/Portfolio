@@ -151,6 +151,14 @@ header {
     z-index: 100;
 }
 
+.nav-active {
+    position: fixed;
+    transition: 0.3s ease-in;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 @media screen and (min-width:768px) {
     header ul li {
         border-bottom: none;

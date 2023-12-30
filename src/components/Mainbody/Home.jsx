@@ -114,7 +114,7 @@ const Home = ({ setopenNav }) => {
                 </button>
             </motion.article>
 
-            <motion.article className='mx-auto'
+            <motion.article className='mx-auto image'
                 initial={
                     {
                         opacity: 0,
