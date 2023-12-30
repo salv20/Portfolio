@@ -44,7 +44,7 @@ const About = () => {
 
 
             <section
-                className=" bg-headerLightBg text-white py-6 space-y-6"
+                className=" bg-headerLightBg text-white py-6 space-y-4"
             >
                 <h1 className=" uppercase text-center text-lg text-white font-bold">about me</h1>
 
