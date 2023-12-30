@@ -15,7 +15,7 @@ const Header = ({ openNav, setopenNav }) => {
                     document.querySelector('main').style.top = '0px'
                 } else {
                     head.classList.add('nav-active')
-                    document.querySelector('main').style.top = `${head.clientHeight * 2.2}px`
+                    document.querySelector('main').style.top = `${head.clientHeight * 2}px`
                 }
             }, {
             threshold: [0.5],
