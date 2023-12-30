@@ -13,7 +13,7 @@ function App() {
   const [openNav, setopenNav] = useState(false)
 
   return (
-    <main>
+    <main className="relative">
       <div className=" bg-headerDarkBg text-navText space-y-6">
         <Header openNav={openNav} setopenNav={setopenNav} />
         <Home setopenNav={setopenNav} />

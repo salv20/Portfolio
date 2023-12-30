@@ -44,8 +44,10 @@ const About = () => {
 
 
             <section
-                className=" bg-headerLightBg text-white py-6"
+                className=" bg-headerLightBg text-white py-6 space-y-6"
             >
+                <h1 className=" uppercase text-center text-lg text-white font-bold">about me</h1>
+
                 <div className="w-5/6 mx-auto space-y-6 md:space-y-0 md:flex justify-between md:space-x-4">
                     <motion.article
                         variants={item1}
@@ -53,7 +55,7 @@ const About = () => {
                         initial="initial"
                         whileInView="animate"
                         className="space-y-2 md:w-3/4 lg:w-1/2">
-                        <h1 className=" uppercase text-gray-300">about me</h1>
+                        <h1 className=" uppercase text-gray-400">about me</h1>
                         <p>
                             I have been working in the tech industry for over a year,
                             and within that time I have gained a wealth of experience and knowledge
@@ -69,7 +71,7 @@ const About = () => {
                         initial="initial"
                         whileInView="animate"
                         className="capitalize space-y-2">
-                        <h1 className=" uppercase text-gray-300">education</h1>
+                        <h1 className=" uppercase text-gray-400">education</h1>
                         <div className="">
                             <p className=" uppercase">high school diploma</p>
                             <p>baptist high school</p>
@@ -86,7 +88,7 @@ const About = () => {
                         initial="initial"
                         whileInView="animate"
                         className="capitalize space-y-2">
-                        <h1 className=" uppercase text-gray-300">experience</h1>
+                        <h1 className=" uppercase text-gray-400">experience</h1>
                         <div className="">
                             <p>company: climedia hub </p>
                             <p>date: december 2023 - january 2024</p>

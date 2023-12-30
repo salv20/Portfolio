@@ -1,8 +1,31 @@
+import { useEffect } from "react"
 import { ScrollInto } from "react-scroll-into-view"
 
 const Header = ({ openNav, setopenNav }) => {
     const navOptions = ['home', 'about', 'skills', 'services', 'projects', 'contact']
     const sectionClass = ['home', 'about', 'skills', 'services', 'projects', 'contact']
+
+    useEffect(() => {
+        const head = document.querySelector('header')
+        const imageArt = document.querySelector('.image')
+        const observer = new IntersectionObserver(
+            ([e]) => {
+                if (e.isIntersecting) {
+                    head.classList.remove('nav-active')
+                    document.querySelector('main').style.top = '0px'
+                } else {
+                    head.classList.add('nav-active')
+                    document.querySelector('main').style.top = `${head.clientHeight * 2.2}px`
+                }
+            }, {
+            threshold: [0.5],
+            root: document,
+        }
+        )
+        observer.observe(imageArt)
+    })
+
+
     return (
         <header className="bg-headerLightBg md:bg-headerDarkBg relative">
             <nav
